@@ -1,0 +1,16 @@
+version: '2'
+services:
+  resume:
+    restart: always
+    image: nginx:alpine
+    environment:
+      - VIRTUAL_HOST=www.v-eden.com,v-eden.com
+      - LETSENCRYPT_HOST=v-eden.com,www.v-eden.com
+      - LETSENCRYPT_EMAIL=ryan.lawson@v-eden.com
+    volumes:
+      - .:/usr/share/nginx/html:ro
+    #   - ./conf/default.conf:/etc/nginx/conf.d/default.conf:ro
+networks:
+  default:
+    external:
+      name: "auto-proxy"
