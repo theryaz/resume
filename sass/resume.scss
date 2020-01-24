@@ -1,0 +1,112 @@
+@import "vars";
+
+
+*{
+	color: $font-color;
+	font-family: lato;
+	font-size: 1.0rem;
+}
+
+body{
+	margin: 0 auto;
+	margin-top: 10px;
+	max-width: 800px;
+}
+h1{
+	font-size: 2.0rem;
+}
+h2{
+	font-size: 1.2rem;
+	padding: 5px;
+	// background-color: $primary-color;
+	// border: none;
+	// color: $font-color-invert;
+	border-bottom: 1px solid $font-color-fade;
+}
+h1,h2,h3,h4{
+	letter-spacing: 2px;
+}
+h4{
+	margin: 10px 0;
+}
+h5{
+	margin: 10px 0;
+}
+
+i{
+	width: 25px;
+	text-align: center;
+}
+
+div#heading{
+	border-bottom: 10px solid $primary-color;
+	padding-bottom: 10px;
+	h1{
+		letter-spacing: 2px;
+	}
+	table{
+		border-collapse: collapse;
+		width: 100%;
+		h1{
+			// padding-left: 10px;
+		}
+		td{
+			vertical-align: middle;
+			// border: 1px solid black;
+		}
+	}
+}
+
+.left{
+	text-align: left;
+}
+.right{
+	text-align: right;
+}
+
+.section{
+	h4{
+		font-size: 1.0rem;
+		font-weight: bold;
+		span{
+			// font-size: 0.8rem;
+			font-weight: normal;
+			color: $font-color-fade;
+		}
+	}
+	table{
+		width: 100%;
+	}
+	th{
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid $font-color-fade;
+	}
+	td{
+		width: 50%;
+		vertical-align: top;
+	}
+	.headings{
+		font-weight: bold;
+	}
+	margin-bottom: 15px;
+}
+
+.sub-section{
+	margin-bottom: 10px;
+}
+
+
+.float-right{
+	float: right;
+}
+
+
+p.description{
+	font-size: 0.8rem;
+	color: $font-color-fade;
+}
+
+.tech-icon{
+	height: 1.0rem;
+}
