@@ -1,7 +1,6 @@
 version: '2'
 services:
   resume:
-    restart: always
     image: nginx:alpine
     ports:
       - 8080:80
